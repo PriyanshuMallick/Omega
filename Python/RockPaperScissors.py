@@ -4,7 +4,6 @@ import random
 class Player:
 
     name, moves = ''
-    # moves = ''
 
     def setName(self, name):
         self.name = name
