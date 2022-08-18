@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe8e8;
+  background-image: linear-gradient(to bottom, rgba(46, 157, 194, 0.5019607843) 0%, rgba(46, 157, 194, 0) 40%, #ffe8e8 100%);
+  display: block;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-variant: small-caps;
+  color: #0d2d38;
+}
+
+.playerName {
+  display: contents;
+  font-size: 13vmin;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.subscript {
+  font-size: 3vmin;
+  padding: 3vh 0;
+  color: #09181d;
+}
+
+.timerShape {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+}
+
+.timerColor {
+  background-color: #8cb7ef;
+  background: conic-gradient(#b1cff6, 0deg, #8cb7ef);
+  margin: auto;
+}
+
+.timerColor:hover {
+  background: conic-gradient(#b1cff6, 360deg, #8cb7ef);
+  transition: linear;
+  transition-duration: 3s;
+}
+
+.scoreArea {
+  display: inline-block;
+}
+
+.scoreBG {
+  height: 14vh;
+}
+
+.opponentScoreArea {
+  position: fixed;
+  bottom: -0.4%;
+  left: -0.4%;
+}
+
+.playerScoreArea {
+  position: fixed;
+  bottom: -0.4%;
+  right: -0.4%;
+}/*# sourceMappingURL=style.css.map */

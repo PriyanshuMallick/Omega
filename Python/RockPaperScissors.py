@@ -3,7 +3,8 @@ import random
 
 class Player:
 
-    name, moves = ''
+    name = ''
+    moves = ''
 
     def setName(self, name):
         self.name = name

@@ -1,0 +1,76 @@
+// Color Variables
+$offWhitePink: #ffe8e8
+$topGradient: #2e9dc280
+$textColor: #0d2d38
+$textColor2: #09181d
+
+*
+    margin: 0
+    padding: 0
+    // border: 100vw 100vh
+    box-sizing: border-box
+
+body
+    background-color: #ffe8e8
+    background-image: linear-gradient(to bottom, $topGradient 0%, #2e9dc200 40%,$offWhitePink 100%)
+    display: block
+    text-align: center
+    width: 100vw
+    height: 100vh
+    font-family: 'Times New Roman', Times, serif
+    font-style: italic
+    font-variant: small-caps
+    color: $textColor
+
+// Text
+
+.playerName
+    display: contents
+    font-size: 13vmin
+    font-family: 'Times New Roman', Times, serif
+
+.subscript
+    font-size: 3vmin
+    padding: 3vh 0
+    color: $textColor2
+
+// Clock
+
+$clockSize: 20vmin
+$clockColor1: #8cb7ef
+$clockColor2: #b1cff6
+
+.timerShape
+    width: $clockSize
+    height: $clockSize
+    border-radius: 50%
+
+.timerColor
+    background-color: $clockColor1
+    background: conic-gradient($clockColor2, 0deg, $clockColor1)
+
+    margin: auto
+
+.timerColor:hover
+    background: conic-gradient($clockColor2, 360deg, $clockColor1)
+    transition: linear
+    transition-duration: 3s
+
+// Score Board
+
+$ScoreAreaPos: -0.4%
+
+.scoreArea
+    display: inline-block
+
+.scoreBG
+    height: 14vh
+
+.opponentScoreArea
+    position: fixed
+    bottom: $ScoreAreaPos
+    left: $ScoreAreaPos
+.playerScoreArea
+    position: fixed
+    bottom: $ScoreAreaPos
+    right: $ScoreAreaPos
