@@ -23,21 +23,21 @@
 
     <!-- Clock -->
 
-    <div class="timerShape timerColor" id="timer">
-
+    <div class="timerShape timerColor" id="timerBG">
+        <h1 id="timer">1</h1>
     </div>
 
     <!-- Choices -->
    
     <div class="choices">
 
-        <div class="rock" id="rock">
+        <div class="rock" id="rock" data-choices="rock">
             ✊🏽
         </div>
-        <div class="paper" id="paper">
+        <div class="paper" id="paper" data-choices="paper">
             ✋🏽
         </div>
-        <div class="Scissors" id="Scissors">
+        <div class="scissors" id="scissors" data-choices="scissors">
             ✌🏽
         </div>
 
@@ -49,11 +49,12 @@
 
         <span class="opponentScoreArea scoreArea">
             <img src="SVG\Opponent-Score-Area.svg" class='scoreBG opponentScoreBG'>
-            <h6 class="playerScore"></h6>
+            <h2 class = 'score' id="opponentScore">00</h2>
         </span>
         <span class="playerScoreArea scoreArea">
+            <h2 class = 'score' id="playerScore">00</h2>
             <img src="SVG\Player-Score-Area.svg" class='scoreBG playerScoreBG'>
-            <h6 class="playerScore"></h6>
+            
         </span>
 
     </footer>

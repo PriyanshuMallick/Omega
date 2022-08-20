@@ -21,6 +21,7 @@ body
     font-style: italic
     font-variant: small-caps
     color: $textColor
+    position: relative
 
 // Text
 
@@ -39,6 +40,10 @@ body
 $clockSize: 20vmin
 $clockColor1: #8cb7ef
 $clockColor2: #b1cff6
+$clockText: #0e4149
+
+#timerBG
+    position: relative
 
 .timerShape
     width: $clockSize
@@ -48,7 +53,6 @@ $clockColor2: #b1cff6
 .timerColor
     background-color: $clockColor1
     background: conic-gradient($clockColor2, 0deg, $clockColor1)
-
     margin: auto
 
 .timerColor:hover
@@ -56,21 +60,58 @@ $clockColor2: #b1cff6
     transition: linear
     transition-duration: 3s
 
+#timer
+    position: relative
+    font-size: $clockSize/1.3
+    top: 50%
+    transform: translateY(-50%)
+
+// Choices
+
+.choices
+    display: flex
+    justify-content: center
+    font-size: 10vmin
+
+.choices:hover
+    cursor: pointer
+
 // Score Board
 
-$ScoreAreaPos: -0.4%
+$scoreAreaPos: -0.4%
+$scorePosH: $scoreAreaPos + 2%
+$scorePosV: $scoreAreaPos + 3%
+$scoreBGHeight: 14vh
+$scoreFontSize: $scoreBGHeight/2
 
 .scoreArea
     display: inline-block
 
 .scoreBG
-    height: 14vh
+    height: $scoreBGHeight
 
 .opponentScoreArea
     position: fixed
-    bottom: $ScoreAreaPos
-    left: $ScoreAreaPos
+    bottom: $scoreAreaPos
+    left: $scoreAreaPos
+
 .playerScoreArea
     position: fixed
-    bottom: $ScoreAreaPos
-    right: $ScoreAreaPos
+    bottom: $scoreAreaPos
+    right: $scoreAreaPos
+
+.score
+    display: inline
+    font-size: $scoreFontSize
+
+#playerScore
+    position: fixed
+    z-index: 10
+    bottom: $scorePosH
+    right: $scorePosV
+
+#opponentScore
+    position: fixed
+    z-index: 10
+    bottom: $scorePosH
+    left: $scorePosV

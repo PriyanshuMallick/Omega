@@ -15,6 +15,7 @@ body {
   font-style: italic;
   font-variant: small-caps;
   color: #0d2d38;
+  position: relative;
 }
 
 .playerName {
@@ -27,6 +28,10 @@ body {
   font-size: 3vmin;
   padding: 3vh 0;
   color: #09181d;
+}
+
+#timerBG {
+  position: relative;
 }
 
 .timerShape {
@@ -47,6 +52,23 @@ body {
   transition-duration: 3s;
 }
 
+#timer {
+  position: relative;
+  font-size: 15.3846153846vmin;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  font-size: 10vmin;
+}
+
+.choices:hover {
+  cursor: pointer;
+}
+
 .scoreArea {
   display: inline-block;
 }
@@ -65,4 +87,23 @@ body {
   position: fixed;
   bottom: -0.4%;
   right: -0.4%;
+}
+
+.score {
+  display: inline;
+  font-size: 7vh;
+}
+
+#playerScore {
+  position: fixed;
+  z-index: 10;
+  bottom: 1.6%;
+  right: 2.6%;
+}
+
+#opponentScore {
+  position: fixed;
+  z-index: 10;
+  bottom: 1.6%;
+  left: 2.6%;
 }/*# sourceMappingURL=style.css.map */
